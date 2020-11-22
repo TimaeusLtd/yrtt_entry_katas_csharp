@@ -29,7 +29,25 @@ namespace TechReturners.Tasks
     {
         public static int[] RowWeights(int[] a)
         {
-            throw new NotImplementedException();
+            int[] teamWeights = new int[2];
+            int weightTeamOne = 0;
+            int intWeightTeamTwo =0;
+
+            for(int i=0; i<a.Length; i++){
+
+                if(i%2==0){
+                    weightTeamOne+=a[i];
+                }
+                else
+                {
+                    intWeightTeamTwo+=a[i];                    
+                }
+            }
+
+            teamWeights[0] = weightTeamOne;
+            teamWeights[1] = intWeightTeamTwo;
+            
+            return teamWeights;            
         }
     }
 }

@@ -9,8 +9,8 @@ namespace TechReturners.Tasks
     public class Exercise002
     {
         public static int Past(int h, int m, int s)
-        {
-            throw new NotImplementedException();
+        {            
+            return 1000*(s+=60*(m+=(h*60)));        
         }
     }
 }

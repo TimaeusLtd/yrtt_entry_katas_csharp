@@ -14,7 +14,15 @@ namespace TechReturners.Tasks
     {
         public static int Singles(List<int> source)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+            foreach(int number in source){
+                int count = 0;
+                foreach(int numberMatch in source){
+                    if(number == numberMatch){++count;}
+                }
+                if(count==1){sum+=number;}
+            }
+            return sum;
         }
     }
 }
